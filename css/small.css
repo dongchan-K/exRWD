@@ -1,7 +1,6 @@
 /* 모바일 기본 글자 크기 */
 body {
   font-size: 1.5rem;
-  background-color: pink;
 }
 /* 모바일 레이아웃 */
 .appHeader,
@@ -30,10 +29,6 @@ body {
 }
 /* 모바일 검색 폼 */
 input[type="search"] {
-  border: 1px solid #aaa;
-  border-radius: 5px;
-  padding: 2px 5px;
-  height: 35px;
   width: calc(100% - 45px);
   margin-right: 5px;
 }
@@ -43,6 +38,28 @@ input[type="search"] {
   height: 35px;
   border: 0;
   padding: 0;
+  background-color: transparent;
+  /* padding IR기법 */
+  /* position: absolute;
+  padding-top: 35px;
+  overflow: hidden;
+  background-color: #38302e;
+  background-image: url(./images/btn_search.png);
+  background-repeat: no-repeat;
+  background-size: cover; */
+  position: relative;
+}
+/* 가상요소 선택자 IR 기법 */
+.buttonSearch::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/btn_search.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* 모바일 내비게이션 */
