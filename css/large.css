@@ -7,7 +7,8 @@ body {
   justify-content: center;
 }
 .appHeader,
-.appMain {
+.appMain,
+.menu__list  {
   width: 1000px;
 }
 .appNavigation {
@@ -42,4 +43,65 @@ body {
   padding: 2px 10px;
   background-color: #988574;
   color: #fff;
+}
+/* 데스크탑 내비게이션 */
+.appNavigation{
+  background-color: #988574;
+  box-shadow: 0 -2px 2px 0 #ccc, 0 2px 2px 0 #ccc;
+}
+.buttonBurger{
+  display: none;
+}
+.menu__list{
+  margin: 0 auto;
+  padding: 20px 0 10px 0;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(5,1fr);
+  grid-gap: 20px;
+  color: #fff;
+}
+.menu__link{
+  font-size: 1.6rem;
+  font-weight: 700;
+  /* 윤곽체 만들기 */
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
+}
+.menu__subMenu li{
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+
+/* 데스크탑 메인 콘텐츠 */
+.appMain{
+  display: grid;
+  grid-template-rows: repeat(2, 25vh);
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+}
+/* 데스크탑 추천 서적 */
+.book{
+  background-color: bisque;
+  grid-area: 1/1/2/span 4;
+}
+/* 데스크탑 새소식 */
+.news{
+  background-color: tomato;
+  grid-area: 1/5/2/span 8;
+}
+/* 데스크탑 게시판 */
+.board{
+  background-color: dodgerblue;
+  grid-area: 2/1/3/span 4;
+}
+/* 데스크탑 인기사이트 */
+.favorite{
+  background-color: pink;
+  grid-area: 2/10/3/span 3;
+}
+/* 데스크탑 트위터 */
+.twitter{
+  background-color: silver;
+  grid-area: 2/5/3/span 5;
 }
