@@ -41,15 +41,15 @@ input[type="search"] {
   background-color: transparent;
   /* padding IR기법 */
   /* position: absolute; */
-  padding-top: 35px;
+  /* padding-top: 35px;
   overflow: hidden;
   background-image: url(./images/btn_search.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  /* position: relative; */
+  background-size: cover; */
+  position: relative;
 }
 /* 가상요소 선택자 IR 기법 */
-/* .buttonSearch::after{
+.buttonSearch::after{
   content: "";
   position: absolute;
   top: 0;
@@ -59,7 +59,7 @@ input[type="search"] {
   background-image: url(./images/btn_search.png);
   background-repeat: no-repeat;
   background-size: cover;
-} */
+}
 
 /* 모바일 내비게이션 */
 
