@@ -154,16 +154,15 @@ input[type="search"] {
 }
 
 
-
 /* 모바일 메인 콘텐츠 */
 .appMain {  
-  padding: 0 20px;
+  padding: 10px 20px;
   display: flex;
   flex-flow: row wrap;
 }
 .book, .news, .board, .favorite, .twitter{
   width: 100%;
-  height: 10vh;
+  margin: 10px 0;
 }
 /* 모바일 푸터 */
 .appFooter {
