@@ -111,3 +111,9 @@ body {
 .twitter{
   grid-area: 2/5/3/span 5;
 }
+/* 데스크탑 푸터 */
+.appFooter{
+  padding: 35px;
+  text-align: center;
+}
+
