@@ -383,9 +383,42 @@ input[type="search"] {
   font-size: 2.5rem;
   font-weight: 700;
 }
+/* 공통 새소식 */
+.news__date{
+  display: block;
+  text-align: right;
+  margin: 1em 0;
+}
+/* 공통 새소식 - iframe */
+.iframeContainer{
+  width: 100%;
+  height: 0;
+  position: relative;
+}
+.iframe4To3{
+  padding-top: 75%;
+}
+.iframe16To9{
+  padding-top: 56.25%;
+}
+.iframe21To9{
+  padding-top: 42.857142857142855%;
+}
+.iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
-
-
+  
+video.reponsive{
+  width: 100%;
+}
+.news__videoContainer{
+  margin: 15px 20px;
+}
 /* 공통 푸터 */
 .appFooter {
   background-color: orange;

@@ -9,7 +9,7 @@ body {
 .appHeader,
 .appMain,
 .menu__list  {
-  width: 1000px;
+  width: 78.125%;
 }
 .appNavigation {
   width: 100%;
